@@ -35,10 +35,14 @@
 
       <div class="hidden lg:block">
         <div
-          class="left flex flex-col gap-5 items-start p-6  border-gray-100 rounded-xl  bg-gradient-to-b from-[#141414] to-[#3F101F] from-70%  fixed ">
-          <div class="xl:translate-x-9 "><img
-              class="rounded-full 2xl:w-40 xl:w-30  border-2 border-[#ff014f] transition-transform duration-500 ease-in-out hover:scale-105 overflow-hidden"
-              src="./image/profile-removebg-preview.png" alt="" /></div>
+          class="left flex flex-col 2xl:pt-10 gap-5 2xl:gap-15 items-start p-6  border-gray-100 rounded-xl h-screen bg-gradient-to-b from-[#141414] to-[#3F101F] from-70% 2xl:from-50%  fixed ">
+          <div>
+            <div
+              class="2xl:w-40 xl:w-30 translate-x-6 relative rounded-full before:w-0 hover:before:w-full before:duration-500 before:transition-all
+              after:content-[''] before:content-[''] after:absolute before:absolute after:-inset-[2px] before:-inset-[2px] after:rounded-full before:rounded-full after:bg-[#FF014F] hover:before:bg-[#FF014F] duration-1000 transition-all  before:blur-md ">
+              <img class="relative z-10 rounded-full" src="./image/profile-removebg-preview.png" alt="" />
+            </div>
+          </div>
           <ul class="text-lg font-semibold border-b w-full border-b-gray-100 flex flex-col gap-2 text-gray-400 pb-5">
             <a href="#home">
               <li class="hover:text-[#ff014f] duration-500 hover:bg-[#2c121a] p-1 rounded-md">
@@ -123,7 +127,7 @@
             </p>
           </div>
           <div class="relative">
-            <div class="flex items-cente bg-[#ff014f] w-[50%] rounded-full justify-center group absolute z-20 ">
+            <div class="flex items-cente bg-[#ff014f] duration-500 transition-all hover:bg-black group w-[50%] rounded-full justify-center group absolute z-20 ">
               <div
                 class="flex items-center opacity-0 group-hover:opacity-100 group-hover:translate-x-0 -translate-x-10 duration-500">
                 <i class="fa-solid fa-arrow-right"></i>
@@ -135,7 +139,7 @@
                 <i class="fa-solid fa-arrow-right"></i>
               </div>
             </div>
-            <div class="w-[50%] h-11 2xl:h-15 rounded-full bg-[#c3ab0d] absolute z-10 blur-sm "></div>
+            <div class="w-[50%] h-11 2xl:h-15 rounded-full bg-[#ff014f] absolute z-10 blur-sm "></div>
           </div>
         </div>
 
@@ -453,61 +457,64 @@
 
     <!-- contact section  -->
     <section id="contact" class="lg:w-[80%] lg:pl-10 ml-auto pb-15 ">
-      <div
-        class="flex flex-col lg:flex-row justify-between items-center border border-[#262626] card bg-[#141414] rounded-lg lg:p-10 p-5">
-        <div class="info lg:w-[30%] ">
-          <p class="uppercase text-[#FF014F] text-lg ">get in touch</p>
-          <h1 class="text-2xl lg:text-6xl font-semibold leading-15 py-4">Elevate your brand with me</h1>
-          <p class="text-[#9F9F9F] font-semibold leading-6">ished fact that a reader will be distrol acted bioiiy desig
-            ished fact that a reader will acted ished fact
-            that a reader will be distrol acted</p>
-        </div>
-        <div class="lg:w-[66%]  w-full ">
-          <form action="" class="text-white contact pt-10">
-            <div class="flex flex-col lg:flex-row items-center justify-between mb-6 gap-5 lg:gap-0">
-              <input
-                class="border border-[#262626] rounded-xl p-5 w-full lg:w-[45%] placeholder:font-semibold focus:outline-none focus:ring-2 focus:ring-[#FF014F] transition-all duration-500 ease-in-out  "
-                placeholder="Your Name" type="text" name="" id="">
-              <input
-                class="border border-[#262626] rounded-xl p-5 w-full lg:w-[45%] placeholder:font-semibold focus:outline-none focus:ring-2 focus:ring-[#FF014F] transition-all duration-500 ease-in-out"
-                type="text" name="" id="" min="11" max="13" placeholder="Phone Number">
-            </div>
-            <div class="flex flex-col lg:flex-row items-center justify-between mb-6 gap-5 lg:gap-0">
-              <input
-                class="border border-[#262626] rounded-xl p-5 w-full lg:w-[45%] placeholder:font-semibold focus:outline-none focus:ring-2 focus:ring-[#FF014F] transition-all duration-500 ease-in-out"
-                type="email" name="" id="" placeholder="Your Email">
-              <input
-                class="border border-[#262626] rounded-xl p-5 w-full lg:w-[45%] placeholder:font-semibold focus:outline-none focus:ring-2 focus:ring-[#FF014F] transition-all duration-500 ease-in-out"
-                type="text" name="" id="" placeholder="Subject">
-            </div>
-            <textarea
-              class="border border-[#262626] rounded-xl p-5  w-[100%] placeholder:font-semibold focus:outline-none focus:ring-2 focus:ring-[#FF014F] transition-all duration-500 ease-in-out "
-              name="" id="" cols="10" rows="6" placeholder="Your Message"></textarea>
-          </form>
+      <div class="relative rounded-lg
+              after:content-[''] before:content-[''] after:absolute before:absolute after:-inset-[2px] before:-inset-[2px] after:rounded-md before:rounded-md after:bg-[conic-gradient(red,_yellow,_green,_yellow,_red)] before:bg-[conic-gradient(red,_yellow,_green,_yellow,_red)] before:blur-lg ">
+        <div
+          class="flex relative z-10 flex-col lg:flex-row justify-between items-center border border-[#262626] card bg-[#141414] rounded-lg lg:p-10 p-5">
+          <div class="info lg:w-[30%] ">
+            <p class="uppercase text-[#FF014F] text-lg ">get in touch</p>
+            <h1 class="text-2xl lg:text-6xl font-semibold leading-15 py-4">Elevate your brand with me</h1>
+            <p class="text-[#9F9F9F] font-semibold leading-6">ished fact that a reader will be distrol acted bioiiy
+              desig
+              ished fact that a reader will acted ished fact
+              that a reader will be distrol acted</p>
+          </div>
+          <div class="lg:w-[66%]  w-full ">
+            <form action="" class="text-white contact pt-10">
+              <div class="flex flex-col lg:flex-row items-center justify-between mb-6 gap-5 lg:gap-0">
+                <input
+                  class="border border-[#262626] rounded-xl p-5 w-full lg:w-[45%] placeholder:font-semibold focus:outline-none focus:ring-2 focus:ring-[#FF014F] transition-all duration-500 ease-in-out  "
+                  placeholder="Your Name" type="text" name="" id="">
+                <input
+                  class="border border-[#262626] rounded-xl p-5 w-full lg:w-[45%] placeholder:font-semibold focus:outline-none focus:ring-2 focus:ring-[#FF014F] transition-all duration-500 ease-in-out"
+                  type="text" name="" id="" min="11" max="13" placeholder="Phone Number">
+              </div>
+              <div class="flex flex-col lg:flex-row items-center justify-between mb-6 gap-5 lg:gap-0">
+                <input
+                  class="border border-[#262626] rounded-xl p-5 w-full lg:w-[45%] placeholder:font-semibold focus:outline-none focus:ring-2 focus:ring-[#FF014F] transition-all duration-500 ease-in-out"
+                  type="email" name="" id="" placeholder="Your Email">
+                <input
+                  class="border border-[#262626] rounded-xl p-5 w-full lg:w-[45%] placeholder:font-semibold focus:outline-none focus:ring-2 focus:ring-[#FF014F] transition-all duration-500 ease-in-out"
+                  type="text" name="" id="" placeholder="Subject">
+              </div>
+              <textarea
+                class="border border-[#262626] rounded-xl p-5  w-[100%] placeholder:font-semibold focus:outline-none focus:ring-2 focus:ring-[#FF014F] transition-all duration-500 ease-in-out "
+                name="" id="" cols="10" rows="6" placeholder="Your Message"></textarea>
+            </form>
 
-          <div class="relative pt-5 pb-20">
-            <div
-              class="flex items-cente bg-[#ff014f] lg:w-[50%] w-full rounded-full justify-center group absolute z-20 ">
+            <div class="relative pt-5 pb-20">
               <div
-                class="flex items-center opacity-0 group-hover:opacity-100 group-hover:translate-x-0 -translate-x-10 duration-500">
-                <i class="fa-solid fa-arrow-right"></i>
+                class="flex items-cente bg-[#ff014f] lg:w-[50%] w-full rounded-full justify-center group absolute z-20 ">
+                <div
+                  class="flex items-center opacity-0 group-hover:opacity-100 group-hover:translate-x-0 -translate-x-10 duration-500">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <button type="submit"
+                  class="py-2  text-xl font-semibold group-hover:translate-x-2 duration-500 -translate-x-5">
+                  Appointment Now
+                </button>
+                <div class="flex items-center opacity-100 group-hover:opacity-0 group-hover:translate-x-5 duration-500">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
               </div>
-              <button type="submit"
-                class="py-2  text-xl font-semibold group-hover:translate-x-2 duration-500 -translate-x-5">
-                Appointment Now
-              </button>
-              <div class="flex items-center opacity-100 group-hover:opacity-0 group-hover:translate-x-5 duration-500">
-                <i class="fa-solid fa-arrow-right"></i>
-              </div>
+              <div class="w-[50%] h-11 rounded-full bg-[#ff014f] absolute z-10 blur-sm "></div>
             </div>
-            <div class="w-[50%] h-11 rounded-full bg-[#ff014f] absolute z-10 blur-sm "></div>
           </div>
         </div>
-
-
       </div>
     </section>
   </main>
+
 
 
   <footer class="2xl:container lg:mx-auto card mx-3">
