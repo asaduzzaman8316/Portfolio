@@ -155,7 +155,7 @@
     </div>
   </header>
 
-  <main class=" 2xl:container mx-auto">
+  <main class=" 2xl:container 2xl:mx-auto mx-2">
     <!-- this is card section  -->
     <section id="features" class="lg:w-[80%] lg:pl-10 ml-auto py-15">
       <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5 py-15 card">
@@ -283,7 +283,7 @@
     <!-- logo  -->
     <section id="client" class="lg:w-[80%] lg:pl-10 ml-auto py-15">
       <div>
-        <div class="grid grid-cols-2 lg:grid-cols-4 py-15">
+        <div class="grid grid-cols-2 lg:grid-cols-4 py-15 ">
           <div class="border p-3 border-gray-800"><img
               src="https://inversweb.com/product/html/reeni/assets/images/our-supported-company/company-logo-1.svg"
               alt=""></div>
@@ -313,7 +313,7 @@
     </section>
 
     <!-- price section  -->
-    <section id="price" class="lg:w-[80%] lg:pl-10 ml-auto card pb-30">
+    <section id="price" class="lg:w-[80%] lg:pl-10 ml-auto card pb-30 px-2">
       <div class="flex flex-col gap-10  ">
         <div class="top text-center mx-auto pb-5">
           <p class="text-[#FF014F] text-lg tracking-tight uppercase">my price plan</p>
@@ -348,7 +348,7 @@
               </div>
             </div>
           </div>
-          <div class="mid flex flex-col   bg-[#141414] p-10  gap-5 rounded-xl scale-115 pl-15 lg:pl-10">
+          <div class="mid flex flex-col   bg-[#141414] p-10  gap-5 rounded-xl lg:scale-115 pl-15 lg:pl-10">
             <div class="flex flex-col gap-1 pb-8 border-b border-b-gray-600">
               <h3 class="text-2xl font-semibold ">Starter</h3>
               <p class="text-5xl font-bold">$ 5.00</p>
@@ -411,30 +411,30 @@
 
     <!-- contact section  -->
     <section id="contact" class="lg:w-[80%] lg:pl-10 ml-auto pb-15 ">
-      <div class="flex justify-between items-center border border-[#262626] card bg-[#141414] rounded-lg p-10 ">
-        <div class="info w-[30%] ">
+      <div class="flex flex-col lg:flex-row justify-between items-center border border-[#262626] card bg-[#141414] rounded-lg lg:p-10 p-5">
+        <div class="info lg:w-[30%] ">
           <p class="uppercase text-[#FF014F] text-lg ">get in touch</p>
-          <h1 class="text-6xl font-bold leading-15 py-4">Elevate your brand with me</h1>
+          <h1 class="text-2xl lg:text-6xl font-semibold leading-15 py-4">Elevate your brand with me</h1>
           <p class="text-[#9F9F9F] font-semibold leading-6">ished fact that a reader will be distrol acted bioiiy desig
             ished fact that a reader will acted ished fact
             that a reader will be distrol acted</p>
         </div>
-        <div class="w-[66%]  ">
+        <div class="lg:w-[66%]  w-full ">
           <form action="" class="text-white contact pt-10">
-            <div class="flex items-center justify-between mb-6 ">
+            <div class="flex flex-col lg:flex-row items-center justify-between mb-6 gap-5 lg:gap-0">
               <input
-                class="border border-[#262626] rounded-xl p-5 w-[45%] placeholder:font-semibold focus:outline-none focus:ring-2 focus:ring-[#FF014F] transition-all duration-500 ease-in-out  "
+                class="border border-[#262626] rounded-xl p-5 w-full lg:w-[45%] placeholder:font-semibold focus:outline-none focus:ring-2 focus:ring-[#FF014F] transition-all duration-500 ease-in-out  "
                 placeholder="Your Name" type="text" name="" id="">
               <input
-                class="border border-[#262626] rounded-xl p-5 w-[45%] placeholder:font-semibold focus:outline-none focus:ring-2 focus:ring-[#FF014F] transition-all duration-500 ease-in-out"
+                class="border border-[#262626] rounded-xl p-5 w-full lg:w-[45%] placeholder:font-semibold focus:outline-none focus:ring-2 focus:ring-[#FF014F] transition-all duration-500 ease-in-out"
                 type="text" name="" id="" min="11" max="13" placeholder="Phone Number">
             </div>
-            <div class="flex items-center justify-between mb-6">
+            <div class="flex flex-col lg:flex-row items-center justify-between mb-6 gap-5 lg:gap-0">
               <input
-                class="border border-[#262626] rounded-xl p-5 w-[45%] placeholder:font-semibold focus:outline-none focus:ring-2 focus:ring-[#FF014F] transition-all duration-500 ease-in-out"
+                class="border border-[#262626] rounded-xl p-5 w-full lg:w-[45%] placeholder:font-semibold focus:outline-none focus:ring-2 focus:ring-[#FF014F] transition-all duration-500 ease-in-out"
                 type="email" name="" id="" placeholder="Your Email">
               <input
-                class="border border-[#262626] rounded-xl p-5 w-[45%] placeholder:font-semibold focus:outline-none focus:ring-2 focus:ring-[#FF014F] transition-all duration-500 ease-in-out"
+                class="border border-[#262626] rounded-xl p-5 w-full lg:w-[45%] placeholder:font-semibold focus:outline-none focus:ring-2 focus:ring-[#FF014F] transition-all duration-500 ease-in-out"
                 type="text" name="" id="" placeholder="Subject">
             </div>
             <textarea
@@ -443,7 +443,7 @@
           </form>
 
           <div class="relative pt-5 pb-20">
-            <div class="flex items-cente bg-[#ff014f] w-[50%] rounded-full justify-center group absolute z-20 ">
+            <div class="flex items-cente bg-[#ff014f] lg:w-[50%] w-full rounded-full justify-center group absolute z-20 ">
               <div
                 class="flex items-center opacity-0 group-hover:opacity-100 group-hover:translate-x-0 -translate-x-10 duration-500">
                 <i class="fa-solid fa-arrow-right"></i>
@@ -466,22 +466,22 @@
   </main>
 
 
-  <footer class="2xl:container mx-auto card">
-    <section class="w-[80%] pl-10 ml-auto">
+  <footer class="2xl:container lg:mx-auto card mx-2">
+    <section class="lg:w-[80%] lg:pl-10 lg:ml-auto ">
       <div class="bg-[#141414] rounded-xl">
-        <div class=" py-15 px-5  flex justify-between border-b border-b-gray-600">
-          <div class="left w-[45%]">
+        <div class=" py-15 px-5  flex flex-col lg:flex-row justify-between border-b border-b-gray-600">
+          <div class="left lg:w-[45%] w-full pb-8">
             <img src="./image/white-logo-reeni.png" alt="">
             <h1 class="text-7xl py-5"><span class="font-bold">Get Ready</span> To Create Great</h1>
             <input class="border-b p-3 mr-3 focus:outline-none border-b-gray-600" type="email" name="" id=""
               placeholder="Your Email">
             <button class="cursor-pointer" type="submit"><i class="fa-solid fa-envelope"></i></button>
           </div>
-          <div class="mid flex flex-col gap-8">
+          <div class="mid flex flex-col gap-8 pb-8">
             <div>
-              <h1 class="text-xl font-semibold">Quick Link</h1>
+              <h1 class="text-2xl lg:text-xl font-semibold">Quick Link</h1>
             </div>
-            <div class="text-lg flex flex-col gap-2">
+            <div class="text-lg flex flex-col gap-3">
               <a class="relative duration-500 hover:text-[#FF014F] after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-[#FF014F] after:transition-all after:duration-300 hover:after:w-full"
                 href="">
                 <p>About Me</p>
@@ -507,10 +507,10 @@
           </div>
           <div class="rigth flex flex-col gap-8">
             <div>
-              <h1 class="text-xl font-semibold">Contact</h1>
+              <h1 class="text-2xl lg:text-xl font-semibold">Contact</h1>
             </div>
             <div class="text-lg flex flex-col gap-5">
-              <div class="flex items-center gap-2">
+              <div class="flex items-center gap-3">
                 <div class=" border border-gray-600 w-4 h-4 p-4 flex items-center justify-center rounded-full"><i
                     class="fa-solid fa-envelope"></i></div>
                 <p
@@ -532,8 +532,8 @@
 
 
             </div>
-            <div class="socal flex flex-col gap-1">
-              <div class="flex items-center justify-between gap-1">
+            <div class="socal flex flex-col gap-1 w-[55%]">
+              <div class="flex items-center justify-between gap-2">
                 <div
                   class="w-5 h-5 bg-[#312126] rounded-full hover:bg-[#ff014f] p-5 flex items-center justify-center duration-500 ease-linear">
                   <a target="_blank" href="https://www.facebook.com/asaduzzaman.dev"><i
@@ -559,12 +559,12 @@
         </div>
 
         <!-- last footer  -->
-        <section class="px-5 py-7 flex justify-between items-center">
-          <div class="flex gap-2">
+        <section class="px-5 py-7 flex flex-col lg:flex-row justify-between items-center">
+          <div class="flex gap-2 text-base">
             <p class="">©Asaduzzaman</p>
             <p class="text-gray-600"> 2025 | All Rights Reserved</p>
           </div>
-          <div class="flex items-center gap-5">
+          <div class="flex items-center gap-5 text-sm">
             <a class="relative duration-500 hover:text-[#FF014F] after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-[#FF014F] after:transition-all after:duration-300 hover:after:w-full"
               href="">
               <p>Trams & Condition</p>
